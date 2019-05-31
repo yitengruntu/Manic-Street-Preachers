@@ -2,7 +2,7 @@
 
 ![Manic Street Preachers](./assets/manic-street-preachers.jpeg)
 
-将官方[gfwlist](https://github.com/gfwlist/gfwlist)所下载到的被 base64 编码的`gfwlist.txt`，转换成 Shadowsocks 所使用的 gfwlist.js。
+将官方[gfwlist](https://github.com/gfwlist/gfwlist)所下载到的`gfwlist.txt`，转换成 Shadowsocks 所使用的 gfwlist.js。
 
 ## 环境需求
 
