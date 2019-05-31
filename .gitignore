@@ -1,0 +1,23 @@
+# build directories
+dist/
+
+.DS_Store
+.vscode
+
+# Dependency directories
+node_modules
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+.idea/
+.idea
+
+# Optional npm cache directory
+.npm
+
+gfwlist.txt
+decode_gfwlist.txt
+gfwlist.js
