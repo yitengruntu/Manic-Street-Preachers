@@ -1,7 +1,9 @@
-const { decode } = require('./decodeBase64.js')
+const { downloadGFW } = require('./download')
+const { decode } = require('./decodeBase64')
 const { arrayFormat } = require('./arrayFormatOperator')
 
-decode('gfwlist.txt')
+downloadGFW()
+  .then(fileName => decode(fileName))
   .then(fileName => arrayFormat(fileName))
 
 // console.log(decodeModule)
