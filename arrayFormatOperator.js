@@ -12,13 +12,14 @@ const arrayFormat = fileName => {
     rl.on('line', line => {
       const pureLine = line.trim()
       if (pureLine && !pureLine.includes('!') && !pureLine.includes('[AutoProxy')) {
-        console.log(`Line from file: ${pureLine}`)
+        // console.log(`Line from file: ${pureLine}`)
         fs.appendFileSync(`gfwlist.js`, `"${pureLine}",\n`)
       }
     })
     rl.on('close', (line) => {
       fs.appendFileSync(`gfwlist.js`, footer)
     })
+    resolve()
   })
 }
 

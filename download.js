@@ -17,7 +17,7 @@ const downloadGFW = () => {
 
     const filename = 'gfwlist.txt'
     downloadFile(fileUrl, filename, () => {
-      console.log('成功')
+      console.log('下载成功')
       resolve(filename)
     })
   })
